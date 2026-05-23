@@ -1,0 +1,100 @@
+# OMNIA Fragility Checker
+
+Detect unstable AI outputs across equivalent prompt variants.
+
+This is a practical command-line tool for AI evaluation and QA automation.
+
+Problem solved:
+
+    same task + equivalent prompt variants + different outputs = fragile case
+
+## Why this exists
+
+AI systems can look correct on one prompt and fail on a semantically equivalent rephrasing.
+
+That is not a philosophical problem. It is a concrete testing problem.
+
+This tool reads a CSV or JSONL file containing multiple outputs for the same case and reports where the output changes when it should remain stable.
+
+## Install
+
+    pip install -e .
+
+## Run
+
+    omnia-fragility examples/sample_outputs.csv --out-dir report
+
+Output:
+
+    report/report.json
+    report/report.csv
+    report/report.html
+
+## Use in CI
+
+    omnia-fragility examples/sample_outputs.csv --out-dir report --fail-on-fragile
+
+Exit codes:
+
+    0 = no blocking fragility detected
+    2 = fragile cases detected
+    3 = critical fragile cases detected when --fail-on-critical is used
+
+## CSV input format
+
+Required columns:
+
+    case_id,variant_id,output
+
+Optional columns:
+
+    input,expected
+
+Minimal example:
+
+    case_id,variant_id,input,output,expected
+    refund_001,base,"When will my refund arrive?","Refunds usually take 3-5 business days.","3-5 business days"
+    refund_001,rephrase_1,"How long does a refund take?","Refunds are instant.","3-5 business days"
+    refund_001,rephrase_2,"When do I get my money back?","Refunds usually take 3-5 business days.","3-5 business days"
+
+## JSONL input format
+
+    {"case_id":"policy_001","variant_id":"base","input":"Can this request be approved?","output":"Final answer: yes","expected":"yes"}
+    {"case_id":"policy_001","variant_id":"rephrase_1","input":"Is this request allowed?","output":"Final answer: no","expected":"yes"}
+
+## Classification
+
+The tool emits case-level statuses:
+
+    STABLE
+    SURFACE_VARIANT
+    ANSWER_FRAGILE
+    NUMERIC_FRAGILE
+    CRITICAL_FRAGILE
+    INSUFFICIENT_VARIANTS
+
+## Practical use cases
+
+- LLM evaluation
+- prompt robustness testing
+- AI support-answer QA
+- model comparison
+- regression testing
+- pre-deployment checks
+- CI/CD quality gates
+
+## What this is not
+
+This is not a general truth detector.
+
+It does not prove whether an answer is universally correct.
+
+It detects a narrower and concrete failure mode:
+
+    the output changes across equivalent variants when it should not
+
+## Background
+
+This tool is derived from the OMNIA measurement ecosystem, but it is intentionally packaged as a standalone practical utility.
+
+The user does not need to understand OMNIA to use this tool.

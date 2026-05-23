@@ -1,0 +1,5 @@
+{"case_id":"policy_001","variant_id":"base","input":"Can this request be approved?","output":"Final answer: yes","expected":"yes"}
+{"case_id":"policy_001","variant_id":"rephrase_1","input":"Is this request allowed?","output":"Final answer: no","expected":"yes"}
+{"case_id":"policy_001","variant_id":"rephrase_2","input":"Should we approve this?","output":"yes","expected":"yes"}
+{"case_id":"math_001","variant_id":"base","input":"2+2?","output":"Answer: 4","expected":"4"}
+{"case_id":"math_001","variant_id":"rephrase_1","input":"What is two plus two?","output":"The final answer is 4.","expected":"4"}

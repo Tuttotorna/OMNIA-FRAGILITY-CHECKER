@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omnia-fragility-checker"
+version = "0.1.0"
+description = "Detect unstable AI outputs across equivalent prompt variants."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+  {name = "Massimiliano Brighindi"}
+]
+keywords = [
+  "AI evaluation",
+  "LLM evaluation",
+  "prompt robustness",
+  "fragility detection",
+  "model validation",
+  "QA automation"
+]
+dependencies = []
+
+[project.scripts]
+omnia-fragility = "omnia_fragility_checker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["omnia_fragility_checker*"]

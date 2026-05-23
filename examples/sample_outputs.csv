@@ -1,0 +1,11 @@
+case_id,variant_id,input,output,expected
+refund_001,base,"When will my refund arrive?","Refunds usually take 3-5 business days.","3-5 business days"
+refund_001,rephrase_1,"How long does a refund take?","Refunds are instant.","3-5 business days"
+refund_001,rephrase_2,"When do I get my money back?","Refunds usually take 3-5 business days.","3-5 business days"
+order_002,base,"Where is my order?","Track your order from your account page.","Track your order from your account page"
+order_002,rephrase_1,"How can I track my shipment?","Track your order from your account page.","Track your order from your account page"
+math_003,base,"What is 17 + 25?","The answer is 42.","42"
+math_003,rephrase_1,"Calculate 25 plus 17.","Final answer: 42","42"
+math_003,rephrase_2,"Add 17 and 25.","It is 43.","42"
+yesno_004,base,"Is the account active?","Answer: yes","yes"
+yesno_004,rephrase_1,"Does the account currently work?","Answer: yes","yes"
