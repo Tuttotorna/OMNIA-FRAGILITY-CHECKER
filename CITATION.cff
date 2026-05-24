@@ -1,20 +1,6 @@
-cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file."
-title: "OMNIA Fragility Checker"
-type: software
-version: "0.1.0"
-date-released: "2026-05-24"
-abstract: "A standalone command-line tool to detect unstable AI outputs across equivalent prompt variants."
-authors:
-  - family-names: "Brighindi"
-    given-names: "Massimiliano"
-repository-code: "https://github.com/Tuttotorna/OMNIA-FRAGILITY-CHECKER"
-url: "https://github.com/Tuttotorna/OMNIA-FRAGILITY-CHECKER"
-license: "MIT"
-keywords:
-  - AI evaluation
-  - LLM evaluation
-  - prompt robustness
-  - fragility detection
-  - model validation
-  - QA automation
+cff-version: 1.2.0\nmessage: "If you use this software, please cite it using the metadata from this file."\ntitle: "OMNIA Fragility Checker"\ntype: software\nversion: "0.1.0"\ndate-released: "2026-05-24"\nabstract: "A standalone command-line tool to detect unstable AI outputs across equivalent prompt variants."\nauthors:\n  - family-names: "Brighindi"\n    given-names: "Massimiliano"\ndoi: "10.5281/zenodo.20365172"\nrepository-code: "https://github.com/Tuttotorna/OMNIA-FRAGILITY-CHECKER"\nurl: "https://github.com/Tuttotorna/OMNIA-FRAGILITY-CHECKER"\nlicense: "MIT"\nkeywords:\n  - AI evaluation\n  - LLM evaluation\n  - prompt robustness\n  - fragility detection\n  - model validation\n  - QA automation\n
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20365172"
+\n
