@@ -98,3 +98,15 @@ It detects a narrower and concrete failure mode:
 This tool is derived from the OMNIA measurement ecosystem, but it is intentionally packaged as a standalone practical utility.
 
 The user does not need to understand OMNIA to use this tool.
+
+## Related ecosystem
+
+OMNIA Fragility Checker is a standalone practical tool.
+
+It is derived from the broader OMNIA / L.O.N. measurement ecosystem, but it does not require any other repository to run.
+
+For readers who want to explore the underlying research context:
+
+- L.O.N. / OMNIA core: https://github.com/Tuttotorna/lon-mirror
+- OMNIA: https://github.com/Tuttotorna/OMNIA
+- OMNIA Validation: https://github.com/Tuttotorna/OMNIA-VALIDATION
