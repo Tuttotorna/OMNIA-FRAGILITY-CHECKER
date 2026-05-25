@@ -8,9 +8,9 @@ abstract: "A standalone command-line tool to detect unstable AI outputs across e
 authors:
   - family-names: "Brighindi"
     given-names: "Massimiliano"
-doi: "10.5281/zenodo.20365172"
+doi: 10.5281/zenodo.20382608
 repository-code: "https://github.com/Tuttotorna/OMNIA-FRAGILITY-CHECKER"
-url: "https://github.com/Tuttotorna/OMNIA-FRAGILITY-CHECKER"
+url: "https://doi.org/10.5281/zenodo.20382608"
 license: "MIT"
 keywords:
   - AI evaluation

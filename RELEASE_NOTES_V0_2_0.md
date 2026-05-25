@@ -75,3 +75,13 @@ surface validity is not structural stability
 ~~~text
 f7946f0
 ~~~
+
+## DOI
+
+~~~text
+10.5281/zenodo.20382608
+~~~
+
+~~~text
+https://doi.org/10.5281/zenodo.20382608
+~~~

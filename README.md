@@ -1,6 +1,6 @@
 # OMNIA Fragility Checker
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20365172.svg)](https://doi.org/10.5281/zenodo.20365172)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20382608.svg)](https://doi.org/10.5281/zenodo.20382608)
 
 Detect unstable AI outputs across equivalent prompt variants.
 
@@ -250,4 +250,26 @@ Core claim:
 
 ~~~text
 surface validity is not structural stability
+~~~
+
+## DOI
+
+~~~text
+10.5281/zenodo.20382608
+~~~
+
+~~~text
+https://doi.org/10.5281/zenodo.20382608
+~~~
+
+## Release v0.2.0 DOI
+
+Structural Fragility Bridge v0.2 is archived on Zenodo.
+
+~~~text
+DOI: 10.5281/zenodo.20382608
+~~~
+
+~~~text
+https://doi.org/10.5281/zenodo.20382608
 ~~~
