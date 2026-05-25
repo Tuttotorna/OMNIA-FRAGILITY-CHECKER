@@ -174,3 +174,60 @@ Role document:
 
 - [Structural Observability Role](docs/STRUCTURAL_OBSERVABILITY_ROLE.md)
 <!-- STRUCTURAL_OBSERVABILITY_ROLE_END -->
+
+## Structural Fragility Bridge v0.2
+
+OMNIA Fragility Checker measures whether outputs remain structurally stable under equivalent variants.
+
+Boundary:
+
+~~~text
+measurement != inference != decision
+~~~
+
+Showroom command:
+
+~~~bash
+python -m omnia_fragility_checker.cli --input examples/sample_fragility_bridge_cases.jsonl --out-dir report
+~~~
+
+CI gates:
+
+~~~bash
+python -m omnia_fragility_checker.cli --input examples/sample_fragility_bridge_cases.jsonl --out-dir report --fail-on-fragile
+python -m omnia_fragility_checker.cli --input examples/sample_fragility_bridge_cases.jsonl --out-dir report --fail-on-critical
+~~~
+
+Artifacts:
+
+~~~text
+report.json
+report.csv
+report.html
+fragile_cases.jsonl
+critical_cases.jsonl
+surface_variants.jsonl
+certificate.json
+~~~
+
+Severity scale:
+
+~~~text
+STABLE
+SURFACE_VARIANT
+ANSWER_FRAGILE
+NUMERIC_FRAGILE
+CRITICAL_FRAGILE
+~~~
+
+Core claim:
+
+~~~text
+surface validity is not structural stability
+~~~
+
+See also:
+
+~~~text
+docs/STRUCTURAL_FRAGILITY_BRIDGE_V0_2.md
+~~~

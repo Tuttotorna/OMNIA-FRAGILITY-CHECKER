@@ -1,0 +1,10 @@
+{"case_id": "stable_001", "variant_id": "base", "prompt_variant": "base", "expected_answer": "0.42", "model_output": "The drift_score is 0.42.", "final_answer": "0.42"}
+{"case_id": "stable_001", "variant_id": "rephrase", "prompt_variant": "rephrase", "expected_answer": "0.42", "model_output": "The drift_score is 0.42.", "final_answer": "0.42"}
+{"case_id": "surface_variant_001", "variant_id": "base", "prompt_variant": "base", "expected_answer": "STABLE", "model_output": "Final answer: STABLE", "final_answer": "STABLE"}
+{"case_id": "surface_variant_001", "variant_id": "markdown", "prompt_variant": "markdown", "expected_answer": "STABLE", "model_output": "**Final answer:** STABLE", "final_answer": "STABLE"}
+{"case_id": "answer_fragile_001", "variant_id": "base", "prompt_variant": "base", "expected_answer": "observer perturbation", "model_output": "The dominant failure mode is observer perturbation.", "final_answer": "observer perturbation"}
+{"case_id": "answer_fragile_001", "variant_id": "rephrase", "prompt_variant": "rephrase", "expected_answer": "observer perturbation", "model_output": "The dominant failure mode is representation drift.", "final_answer": "representation drift"}
+{"case_id": "numeric_fragile_001", "variant_id": "base", "prompt_variant": "base", "expected_answer": "0.42", "model_output": "The drift_score is 0.42.", "final_answer": "0.42"}
+{"case_id": "numeric_fragile_001", "variant_id": "rephrase", "prompt_variant": "rephrase", "expected_answer": "0.42", "model_output": "After recalculation, the drift_score is 0.57.", "final_answer": "0.57"}
+{"case_id": "critical_fragile_001", "variant_id": "base", "prompt_variant": "base", "expected_gate": "STOP", "observed_gate": "STOP", "model_output": "Gate: STOP. Saturation boundary reached.", "final_answer": "STOP"}
+{"case_id": "critical_fragile_001", "variant_id": "rephrase", "prompt_variant": "rephrase", "expected_gate": "STOP", "observed_gate": "CONTINUE", "model_output": "Gate: CONTINUE. Proceed with the trajectory.", "final_answer": "CONTINUE"}
