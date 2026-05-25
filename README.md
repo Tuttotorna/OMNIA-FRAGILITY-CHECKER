@@ -231,3 +231,23 @@ See also:
 ~~~text
 docs/STRUCTURAL_FRAGILITY_BRIDGE_V0_2.md
 ~~~
+
+## Release v0.2.0
+
+Structural Fragility Bridge v0.2 is available as a reproducible showroom release.
+
+~~~text
+input -> classifier -> report -> certificate -> CI exit code
+~~~
+
+Release:
+
+~~~text
+https://github.com/Tuttotorna/OMNIA-FRAGILITY-CHECKER/releases/tag/v0.2.0
+~~~
+
+Core claim:
+
+~~~text
+surface validity is not structural stability
+~~~
