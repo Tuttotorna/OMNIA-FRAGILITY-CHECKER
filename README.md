@@ -146,3 +146,31 @@ For readers who want to explore the underlying research context:
 - L.O.N. / OMNIA core: https://github.com/Tuttotorna/lon-mirror
 - OMNIA: https://github.com/Tuttotorna/OMNIA
 - OMNIA Validation: https://github.com/Tuttotorna/OMNIA-VALIDATION
+
+<!-- STRUCTURAL_OBSERVABILITY_ROLE_START -->
+## Structural Observability role
+
+This repository is one bounded measurement role inside **Structural Observability**.
+
+Role:
+
+~~~text
+AI output fragility auditor
+~~~
+
+Boundary:
+
+~~~text
+Fragility is structural. It does not by itself decide semantic truth.
+~~~
+
+Structural Observability foundation:
+
+- lon-mirror: https://github.com/Tuttotorna/lon-mirror
+- Foundation release: https://github.com/Tuttotorna/lon-mirror/releases/tag/v0.2.2
+- DOI: https://doi.org/10.5281/zenodo.20379374
+
+Role document:
+
+- [Structural Observability Role](docs/STRUCTURAL_OBSERVABILITY_ROLE.md)
+<!-- STRUCTURAL_OBSERVABILITY_ROLE_END -->
