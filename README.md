@@ -273,3 +273,24 @@ DOI: 10.5281/zenodo.20382608
 ~~~text
 https://doi.org/10.5281/zenodo.20382608
 ~~~
+
+## Why this fails
+
+A short 30-second explanation of the core failure mode is available here:
+
+~~~text
+docs/WHY_THIS_FAILS.md
+~~~
+
+Core idea:
+
+~~~text
+If the task, data, constraint, and decision boundary remain equivalent,
+the output should remain structurally compatible.
+~~~
+
+This is the practical meaning of:
+
+~~~text
+surface validity is not structural stability
+~~~
