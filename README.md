@@ -10,6 +10,25 @@ Problem solved:
 
     same task + equivalent prompt variants + different outputs = fragile case
 
+
+## Foundational Principle
+
+OMNIA-FRAGILITY-CHECKER is a fragility-testing application of the L.O.N. Multi-Form Invariance Principle:
+
+> No single form is sovereign.
+
+In OMNIA-FRAGILITY-CHECKER, this becomes:
+
+> No apparent stability is sovereign without fragility testing.
+
+A response, claim, output, or structure should not be trusted because it appears stable under one form. It must be exposed to controlled perturbations, representation changes, and structural stress checks before trust is granted.
+
+OMNIA-FRAGILITY-CHECKER exists to detect when surface coherence hides structural fragility.
+
+See:
+
+- https://github.com/Tuttotorna/lon-mirror/tree/main/foundation
+
 ## Why this exists
 
 AI systems can look correct on one prompt and fail on a semantically equivalent rephrasing.
